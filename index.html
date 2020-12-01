@@ -36,7 +36,7 @@
                 color: #e9ecef;
             }
             .register{
-                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+                background: -webkit-linear-gradient(left, #bfe3d6, #00c6ff);
                 margin-top: 3%;
                 padding: 3%;
                 border-radius: 2.5rem;
@@ -65,13 +65,20 @@
             <div class="row">
                 <div class="col-md-12">
                         <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Connect Google Spreadsheet to HTML</h3>
+                            <h3 class="register-heading">Avo SmartDrive Parts Used for Repairs</h3>
                             
                                 
                             <div class="row register-form">
                                 
                                 <div class="formWrapper">
                                     <form method="post" autocomplete="off" name="google-sheet">
+                                        
+                                        <div class="master">
+                                            <label for="Units">Units:</label>
+                                            <input type="text" name="Units" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+                                            <span class="validator" style="display: none;">*</>
+                                        </div>
+                                        
                                         <div class="master">
                                             <div class="img">
                                                 <img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" width="75" height="75" />
