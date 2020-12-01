@@ -6,10 +6,14 @@
     <title>Document</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style>
-        form { display: inline }
-            .register .nav-tabs .nav-link:hover{
-                border: none;
-            }
+        .master{
+    display:table;
+}
+.img,.frm{
+    display:table-cell;
+    /* vertical-align:top; */
+    vertical-align:middle;
+}
             .text-align{
                 margin-top: -3%;
                 margin-bottom: -9%;
@@ -53,11 +57,10 @@
     </style>
     
     <style type="text/css">
-   .formWrapper { width: 400px }
-   .formWrapper .formItem { line-height: 35px; height: 35px; }
-   .formWrapper label { width: 50px; }
-   .formWrapper input { width: 100px; border: 1px solid #000; }
-   .formWrapper .validator { padding-left: 10px; color: #FF0000; }
+   form { display: inline }
+            .register .nav-tabs .nav-link:hover{
+                border: none;
+            }
    </style>
 
 </head>
@@ -74,6 +77,10 @@
                                 
                                 <div class="formWrapper">
                                     <form method="post" autocomplete="off" name="google-sheet">
+                                        <div class="master">
+                                            <div class="img">
+                                                <img src="http://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" />
+                                            </div>
                                         <div class="form-group">
                                             <label for="Name">NAME:</label>
                                             <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
@@ -97,6 +104,9 @@
                                         <div class="form-group">
                                             <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
                                         </div>
+                                            
+                                            </div>
+                                            
                                     </form>
                                 </div>
                                             
